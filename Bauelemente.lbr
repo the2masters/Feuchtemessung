@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -125,8 +125,7 @@
 <wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.2" layer="51"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.2" layer="51"/>
 <text x="0" y="-6" size="2" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<text x="0" y="6" size="2" layer="27" font="vector" align="bottom-center">&gt;VALUE</text>
-<circle x="-5" y="5" radius="1" width="0.2" layer="21"/>
+<circle x="-5" y="5" radius="0.9" width="0.2" layer="21"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="4.5" width="0.2" layer="21"/>
 <wire x1="-3.5" y1="3.5" x2="-4.5" y2="3.5" width="0.2" layer="21"/>
 <wire x1="3.5" y1="3.5" x2="3.5" y2="4.5" width="0.2" layer="21"/>
@@ -167,7 +166,21 @@
 <rectangle x1="1" y1="-4.5" x2="1.4" y2="-3.7" layer="51"/>
 <rectangle x1="1.8" y1="-4.5" x2="2.2" y2="-3.7" layer="51"/>
 <rectangle x1="2.6" y1="-4.5" x2="3" y2="-3.7" layer="51"/>
-<rectangle x1="-4.5" y1="-4.5" x2="4.5" y2="4.5" layer="41"/>
+<polygon width="0" layer="39">
+<vertex x="-3.6" y="3.6"/>
+<vertex x="-3.6" y="5.1"/>
+<vertex x="3.6" y="5.1"/>
+<vertex x="3.6" y="3.6"/>
+<vertex x="5.2" y="3.6"/>
+<vertex x="5.1" y="3.6"/>
+<vertex x="5.1" y="-3.6"/>
+<vertex x="3.6" y="-3.6"/>
+<vertex x="3.6" y="-5.1"/>
+<vertex x="-3.6" y="-5.1"/>
+<vertex x="-3.6" y="-3.6"/>
+<vertex x="-5.1" y="-3.6"/>
+<vertex x="-5.1" y="3.6"/>
+</polygon>
 </package>
 <package name="USB_ESD_IP4234CZ6">
 <smd name="5" x="0" y="1.35" dx="1.3" dy="0.5" layer="1" rot="R90"/>
@@ -176,7 +189,6 @@
 <smd name="3" x="0.95" y="-1.35" dx="1.3" dy="0.5" layer="1" rot="R90"/>
 <smd name="1" x="-0.95" y="-1.35" dx="1.3" dy="0.5" layer="1" rot="R90"/>
 <smd name="6" x="-0.95" y="1.35" dx="1.3" dy="0.5" layer="1" rot="R90"/>
-<rectangle x1="-1.55" y1="-1.5" x2="1.55" y2="1.5" layer="41"/>
 <wire x1="-1.45" y1="0.75" x2="1.45" y2="0.75" width="0.2" layer="51"/>
 <wire x1="1.45" y1="-0.75" x2="-1.45" y2="-0.75" width="0.2" layer="51"/>
 <wire x1="-1.45" y1="0.75" x2="-2.45" y2="0.75" width="0.2" layer="21"/>
@@ -186,8 +198,7 @@
 <rectangle x1="0.75" y1="0.9" x2="1.15" y2="1.5" layer="51"/>
 <rectangle x1="-0.2" y1="0.9" x2="0.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.15" y1="0.9" x2="-0.75" y2="1.5" layer="51"/>
-<text x="0" y="2.5" size="2" layer="27" align="bottom-center">&gt;VALUE</text>
-<circle x="-2.95" y="-2.25" radius="1" width="0.2" layer="21"/>
+<circle x="-2.95" y="-2.25" radius="0.9" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="1.75" x2="-1.45" y2="-0.75" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="-0.75" x2="-1.45" y2="-1.75" width="0.2" layer="21"/>
 <wire x1="1.45" y1="1.75" x2="1.45" y2="0.75" width="0.2" layer="21"/>
@@ -197,6 +208,7 @@
 <wire x1="2.45" y1="-0.75" x2="1.45" y2="-0.75" width="0.2" layer="21"/>
 <wire x1="2.45" y1="0.75" x2="1.45" y2="0.75" width="0.2" layer="21"/>
 <text x="-1.4" y="-2.5" size="2" layer="25" font="vector" align="top-left">&gt;NAME</text>
+<rectangle x1="-1.55" y1="-2.1" x2="1.55" y2="2.1" layer="39"/>
 </package>
 <package name="CON_MICROUSB_ZX62R-B-5P">
 <smd name="3" x="0" y="-0.675" dx="0.4" dy="1.35" layer="1"/>
@@ -210,7 +222,8 @@
 <smd name="SHIELD3" x="-4.1" y="-3.35" dx="1.6" dy="1.9" layer="1"/>
 <smd name="SHIELD4" x="4.1" y="-3.35" dx="1.6" dy="1.9" layer="1"/>
 <wire x1="-4.9" y1="-4.8" x2="4.9" y2="-4.8" width="0.005" layer="20"/>
-<rectangle x1="-4.9" y1="-4.8" x2="4.9" y2="-0.5" layer="41"/>
+<rectangle x1="-4.9" y1="-4.8" x2="4.9" y2="0" layer="41"/>
+<rectangle x1="-5" y1="-4.8" x2="5" y2="0.1" layer="39"/>
 </package>
 <package name="0603">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -223,13 +236,14 @@ chip</description>
 <wire x1="0.5" y1="0.4" x2="0.8" y2="0.4" width="0.2" layer="51"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1.2" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1.2" layer="1"/>
-<text x="-0.889" y="0.889" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="1" size="1" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1" size="1" layer="27" align="top-center">&gt;VALUE</text>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 <wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.2" layer="51"/>
 <wire x1="0.8" y1="-0.4" x2="0.8" y2="0.4" width="0.2" layer="51"/>
 <wire x1="0.5" y1="0.4" x2="0.5" y2="-0.4" width="0.2" layer="51"/>
 <wire x1="-0.5" y1="0.4" x2="-0.5" y2="-0.4" width="0.2" layer="51"/>
+<rectangle x1="-1" y1="-0.6" x2="1" y2="0.6" layer="39"/>
 </package>
 <package name="QUARTZ_ABMM2">
 <smd name="1" x="-2.2" y="-1.2" dx="1.8" dy="1.4" layer="1"/>
@@ -260,6 +274,8 @@ chip</description>
 <wire x1="-0.5" y1="0" x2="-2.2" y2="0" width="0.2" layer="21"/>
 <wire x1="-2.2" y1="0" x2="-2.2" y2="-0.2" width="0.2" layer="21"/>
 <wire x1="2.2" y1="0" x2="2.2" y2="0.2" width="0.2" layer="21"/>
+<text x="0" y="2.1" size="1" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.2" y1="-2" x2="3.2" y2="2" layer="39"/>
 </package>
 <package name="CON_ISP_AVR10">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;&lt;p&gt; AVR ISP 10 Pin, 0.1" Straight</description>
@@ -277,8 +293,7 @@ chip</description>
 <pad name="8" x="2.54" y="1.27" drill="1" shape="square"/>
 <pad name="9" x="5.08" y="-1.27" drill="1" shape="square"/>
 <pad name="10" x="5.08" y="1.27" drill="1" shape="square"/>
-<text x="0" y="-3.175" size="2" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<text x="0" y="3.175" size="2" layer="27" font="vector" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="-3.048" size="2" layer="25" font="vector" align="top-center">&gt;NAME</text>
 <rectangle x1="-5.334" y1="-1.524" x2="-4.826" y2="-1.016" layer="51"/>
 <rectangle x1="-5.334" y1="1.016" x2="-4.826" y2="1.524" layer="51"/>
 <rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
@@ -289,6 +304,8 @@ chip</description>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 <rectangle x1="4.826" y1="1.016" x2="5.334" y2="1.524" layer="51"/>
 <rectangle x1="4.826" y1="-1.524" x2="5.334" y2="-1.016" layer="51"/>
+<rectangle x1="-6.35" y1="-2.54" x2="6.35" y2="2.54" layer="39"/>
+<circle x="-7.62" y="-3.81" radius="1.016" width="0.508" layer="21"/>
 </package>
 </packages>
 <symbols>
