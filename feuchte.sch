@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -895,7 +895,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <instance part="K1" gate="G$1" x="167.64" y="78.74"/>
 <instance part="K1" gate="G$2" x="187.96" y="76.2"/>
 <instance part="IC1" gate="A" x="170.18" y="58.42"/>
-<instance part="R1" gate="G$1" x="134.62" y="27.94"/>
+<instance part="R1" gate="G$1" x="137.16" y="35.56"/>
 <instance part="C1" gate="G$1" x="17.78" y="63.5" rot="R180"/>
 <instance part="Q1" gate="G$1" x="45.72" y="40.64" rot="R270"/>
 <instance part="C2" gate="G$1" x="43.18" y="43.18" rot="R270"/>
@@ -918,7 +918,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <instance part="U$1" gate="1" x="132.08" y="71.12" rot="MR0"/>
 <instance part="P+3" gate="1" x="121.92" y="78.74"/>
 <instance part="GND7" gate="1" x="121.92" y="60.96"/>
-<instance part="C7" gate="G$1" x="152.4" y="27.94"/>
+<instance part="C7" gate="G$1" x="124.46" y="33.02"/>
 </instances>
 <busses>
 </busses>
