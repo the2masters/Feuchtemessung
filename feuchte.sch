@@ -203,7 +203,7 @@ chip</description>
 <wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.2" layer="51"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.2" layer="51"/>
 <text x="0" y="-6.1" size="2" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<circle x="-5" y="5" radius="0.9" width="0.2" layer="21"/>
+<circle x="-4.5" y="4.5" radius="1" width="0.2" layer="21"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="4.5" width="0.2" layer="21"/>
 <wire x1="-3.5" y1="3.5" x2="-4.5" y2="3.5" width="0.2" layer="21"/>
 <wire x1="3.5" y1="3.5" x2="3.5" y2="4.5" width="0.2" layer="21"/>
@@ -262,7 +262,7 @@ chip</description>
 <rectangle x1="0.75" y1="0.9" x2="1.15" y2="1.5" layer="51"/>
 <rectangle x1="-0.2" y1="0.9" x2="0.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.15" y1="0.9" x2="-0.75" y2="1.5" layer="51"/>
-<circle x="-2.95" y="-2.25" radius="0.9" width="0.2" layer="21"/>
+<circle x="-2.45" y="-1.75" radius="1" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="1.75" x2="-1.45" y2="-0.75" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="-0.75" x2="-1.45" y2="-1.75" width="0.2" layer="21"/>
 <wire x1="1.45" y1="1.75" x2="1.45" y2="0.75" width="0.2" layer="21"/>
@@ -379,7 +379,7 @@ chip</description>
 <wire x1="5" y1="-2" x2="5" y2="-3" width="0.1" layer="21"/>
 <wire x1="5" y1="-2" x2="6" y2="-2" width="0.1" layer="21"/>
 <wire x1="5" y1="2" x2="6" y2="2" width="0.1" layer="21"/>
-<circle x="-6.5" y="-3.5" radius="0.9" width="0.2" layer="21"/>
+<circle x="-6.05" y="-3.05" radius="1" width="0.2" layer="21"/>
 <rectangle x1="-5.1" y1="-3.2" x2="5.1" y2="3.2" layer="39"/>
 </package>
 <package name="CON_PCB_7.5MM_3-POLE">
@@ -872,6 +872,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="CON2" library="Bauelemente" deviceset="CON_PCB_7.5MM_3-POLE" device=""/>
 <part name="CON1" library="Bauelemente" deviceset="CON_PCB_7.5MM_3-POLE" device=""/>
+<part name="R4" library="Bauelemente" deviceset="R" device="" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -901,7 +902,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <instance part="GND3" gate="1" x="38.1" y="35.56"/>
 <instance part="GND4" gate="1" x="43.18" y="58.42"/>
 <instance part="GND5" gate="1" x="22.86" y="66.04"/>
-<instance part="GND6" gate="1" x="106.68" y="17.78"/>
+<instance part="GND6" gate="1" x="106.68" y="7.62"/>
 <instance part="U$1" gate="1" x="132.08" y="71.12" rot="MR0"/>
 <instance part="P+3" gate="1" x="121.92" y="78.74"/>
 <instance part="GND7" gate="1" x="121.92" y="60.96"/>
@@ -917,6 +918,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <instance part="P+6" gate="1" x="203.2" y="86.36"/>
 <instance part="CON2" gate="A" x="187.96" y="101.6" rot="MR270"/>
 <instance part="CON1" gate="A" x="231.14" y="101.6" rot="MR270"/>
+<instance part="R4" gate="G$1" x="106.68" y="15.24" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1004,16 +1006,35 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <wire x1="17.78" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="(!HWB!/T0/!CTS!/AIN6)_PD7"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="157.48" y1="48.26" x2="154.94" y2="48.26" width="0.1524" layer="91"/>
+<junction x="157.48" y="48.26"/>
+<wire x1="154.94" y1="48.26" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="I6"/>
+<pinref part="IC1" gate="A" pin="I5"/>
+<wire x1="157.48" y1="53.34" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="I4"/>
+<wire x1="157.48" y1="55.88" x2="157.48" y2="58.42" width="0.1524" layer="91"/>
+<junction x="157.48" y="55.88"/>
+<pinref part="IC1" gate="A" pin="I3"/>
+<wire x1="157.48" y1="58.42" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
+<junction x="157.48" y="58.42"/>
+<wire x1="154.94" y1="53.34" x2="157.48" y2="53.34" width="0.1524" layer="91"/>
+<junction x="157.48" y="53.34"/>
+<wire x1="157.48" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<junction x="157.48" y="60.96"/>
+<wire x1="154.94" y1="60.96" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="I1"/>
+<wire x1="154.94" y1="66.04" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -1071,7 +1092,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <wire x1="27.94" y1="53.34" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USBC_N" class="0">
+<net name="USBC_" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="D-"/>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -1085,7 +1106,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <wire x1="38.1" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USBR_N" class="0">
+<net name="USBR_" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="D-µC"/>
 <wire x1="20.32" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
@@ -1124,9 +1145,9 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <segment>
 <pinref part="U1" gate="A" pin="!RESET!_(PC1/DW)"/>
 <wire x1="50.8" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="33.02" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="10.16" x2="116.84" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="10.16" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="33.02" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="5.08" x2="116.84" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="5.08" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="1" pin="RESET"/>
 <wire x1="116.84" y1="66.04" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
 </segment>
@@ -1256,6 +1277,12 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <wire x1="149.86" y1="53.34" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="I2"/>
 <wire x1="149.86" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="(!HWB!/T0/!CTS!/AIN6)_PD7"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
