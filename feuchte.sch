@@ -133,38 +133,6 @@ chip</description>
 <wire x1="-0.5" y1="0.4" x2="-0.5" y2="-0.4" width="0.2" layer="51"/>
 <rectangle x1="-1" y1="-0.6" x2="1" y2="0.6" layer="39"/>
 </package>
-<package name="QUARTZ_ABMM2">
-<smd name="1" x="-2.2" y="-1.2" dx="1.8" dy="1.4" layer="1"/>
-<smd name="2" x="2.2" y="-1.2" dx="1.8" dy="1.4" layer="1"/>
-<smd name="3" x="2.2" y="1.2" dx="1.8" dy="1.4" layer="1"/>
-<smd name="4" x="-2.2" y="1.2" dx="1.8" dy="1.4" layer="1"/>
-<wire x1="-1" y1="1.8" x2="1" y2="1.8" width="0.2" layer="21"/>
-<wire x1="-1" y1="-1.8" x2="1" y2="-1.8" width="0.2" layer="21"/>
-<wire x1="3" y1="0.2" x2="3" y2="-0.2" width="0.2" layer="21"/>
-<wire x1="-3" y1="0.2" x2="-3" y2="-0.2" width="0.2" layer="21"/>
-<wire x1="-3" y1="0.2" x2="-3" y2="1.8" width="0.2" layer="51"/>
-<wire x1="-3" y1="1.8" x2="-1" y2="1.8" width="0.2" layer="51"/>
-<wire x1="1" y1="1.8" x2="3" y2="1.8" width="0.2" layer="51"/>
-<wire x1="3" y1="1.8" x2="3" y2="0.2" width="0.2" layer="51"/>
-<wire x1="3" y1="-0.2" x2="3" y2="-1.8" width="0.2" layer="51"/>
-<wire x1="3" y1="-1.8" x2="1" y2="-1.8" width="0.2" layer="51"/>
-<wire x1="-1" y1="-1.8" x2="-3" y2="-1.8" width="0.2" layer="51"/>
-<wire x1="-3" y1="-1.8" x2="-3" y2="-0.2" width="0.2" layer="51"/>
-<wire x1="-0.2" y1="0.4" x2="0.2" y2="0.4" width="0.2" layer="21"/>
-<wire x1="0.2" y1="0.4" x2="0.2" y2="-0.4" width="0.2" layer="21"/>
-<wire x1="0.2" y1="-0.4" x2="-0.2" y2="-0.4" width="0.2" layer="21"/>
-<wire x1="-0.2" y1="-0.4" x2="-0.2" y2="0.4" width="0.2" layer="21"/>
-<wire x1="0.5" y1="0.4" x2="0.5" y2="0" width="0.2" layer="21"/>
-<wire x1="0.5" y1="0" x2="0.5" y2="-0.4" width="0.2" layer="21"/>
-<wire x1="-0.5" y1="0.4" x2="-0.5" y2="0" width="0.2" layer="21"/>
-<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.4" width="0.2" layer="21"/>
-<wire x1="0.5" y1="0" x2="2.2" y2="0" width="0.2" layer="21"/>
-<wire x1="-0.5" y1="0" x2="-2.2" y2="0" width="0.2" layer="21"/>
-<wire x1="-2.2" y1="0" x2="-2.2" y2="-0.2" width="0.2" layer="21"/>
-<wire x1="2.2" y1="0" x2="2.2" y2="0.2" width="0.2" layer="21"/>
-<text x="0" y="2.5" size="1" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-3.2" y1="-2" x2="3.2" y2="2" layer="39"/>
-</package>
 <package name="TQFP32-0.8">
 <smd name="1" x="-4.25" y="2.8" dx="0.5" dy="1.5" layer="1" rot="R90"/>
 <smd name="2" x="-4.25" y="2" dx="0.5" dy="1.5" layer="1" rot="R90"/>
@@ -400,6 +368,30 @@ chip</description>
 <wire x1="7.5" y1="-3" x2="9.45" y2="-4.95" width="0.2" layer="21"/>
 <text x="0" y="6.65" size="2" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="QUARTZ_HC49S">
+<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
+<wire x1="-0.254" y1="0.762" x2="0.254" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.762" x2="0.254" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="-0.762" x2="-0.254" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="-0.762" x2="-0.254" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0.762" x2="0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0.762" x2="-0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.27" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.27" y2="0" width="0.1524" layer="21"/>
+<pad name="1" x="-2.44" y="0" drill="0.8"/>
+<pad name="2" x="2.44" y="0" drill="0.8"/>
+<text x="-5.08" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-3.937" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-3.25" y1="2.4" x2="3.25" y2="2.4" width="0.2" layer="21"/>
+<wire x1="-3.25" y1="-2.4" x2="3.25" y2="-2.4" width="0.2" layer="21"/>
+<wire x1="3.25" y1="2.4" x2="3.25" y2="-2.4" width="0.2" layer="21" curve="-180"/>
+<wire x1="-3.25" y1="-2.4" x2="-3.25" y2="2.4" width="0.2" layer="21" curve="-180"/>
+<rectangle x1="-4.5" y1="-2.5" x2="4.5" y2="2.5" layer="39"/>
+<rectangle x1="-5.75" y1="-1.5" x2="-4.5" y2="1.5" layer="39"/>
+<rectangle x1="4.5" y1="-1.5" x2="5.75" y2="1.5" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C">
@@ -411,24 +403,6 @@ chip</description>
 <rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="QUARTZ_GROUNDED">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.254" layer="94"/>
-<pin name="GND" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 </symbol>
 <symbol name="MCU_ATMEGA32U2-AU">
 <pin name="VCC" x="-27.94" y="25.4" length="middle" direction="pwr"/>
@@ -585,9 +559,25 @@ chip</description>
 <pin name="3" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
 <text x="0" y="-6.096" size="2.54" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
+<symbol name="QUARTZ">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="C" uservalue="yes">
+<deviceset name="C" prefix="C" uservalue="yes">
 <description>Capacitor / Kondensator</description>
 <gates>
 <gate name="G$1" symbol="C" x="0" y="0"/>
@@ -597,23 +587,6 @@ chip</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="QUARTZ_ABMM2">
-<gates>
-<gate name="G$1" symbol="QUARTZ_GROUNDED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QUARTZ_ABMM2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -674,7 +647,7 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="R" uservalue="yes">
+<deviceset name="R" prefix="R" uservalue="yes">
 <description>Resistor / Widerstand</description>
 <gates>
 <gate name="G$1" symbol="R" x="0" y="0"/>
@@ -713,7 +686,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CON_MICROUSB_ZX62R-B-5P">
+<deviceset name="CON_MICROUSB_ZX62R-B-5P" prefix="CON">
 <gates>
 <gate name="A" symbol="CON_USB" x="0" y="0"/>
 </gates>
@@ -733,7 +706,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CON_SPI_AVR10">
+<deviceset name="CON_SPI_AVR10" prefix="CON">
 <gates>
 <gate name="1" symbol="CON_ISP_AVR10" x="0" y="0"/>
 </gates>
@@ -805,7 +778,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CON_PCB_7.5MM_3-POLE">
+<deviceset name="CON_PCB_7.5MM_3-POLE" prefix="CON">
 <gates>
 <gate name="A" symbol="CON_3-POLE" x="0" y="0"/>
 </gates>
@@ -815,6 +788,22 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="QUARTZ_HC49S" prefix="Q" uservalue="yes">
+<gates>
+<gate name="A" symbol="QUARTZ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QUARTZ_HC49S">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -839,13 +828,12 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <part name="K2" library="Bauelemente" deviceset="RELAY_G5LA" device=""/>
 <part name="IC1" library="Bauelemente" deviceset="IC_ULN2003A" device="D"/>
 <part name="R1" library="Bauelemente" deviceset="R" device="" value="1k"/>
-<part name="C1" library="Bauelemente" deviceset="C" device="" value="100n"/>
-<part name="Q1" library="Bauelemente" deviceset="QUARTZ_ABMM2" device="" value="12MHz"/>
+<part name="C1" library="Bauelemente" deviceset="C" device="" value="10µ"/>
 <part name="C2" library="Bauelemente" deviceset="C" device="" value="33p"/>
 <part name="C3" library="Bauelemente" deviceset="C" device="" value="33p"/>
 <part name="C4" library="Bauelemente" deviceset="C" device="" value="100n"/>
 <part name="C5" library="Bauelemente" deviceset="C" device="" value="1µ"/>
-<part name="C6" library="Bauelemente" deviceset="C" device="" value="10µ"/>
+<part name="C6" library="Bauelemente" deviceset="C" device="" value="100n"/>
 <part name="R2" library="Bauelemente" deviceset="R" device="" value="22"/>
 <part name="R3" library="Bauelemente" deviceset="R" device="" value="22"/>
 <part name="USB1" library="Bauelemente" deviceset="CON_MICROUSB_ZX62R-B-5P" device=""/>
@@ -856,7 +844,6 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="Bauelemente" deviceset="CON_SPI_AVR10" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
@@ -873,6 +860,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <part name="CON2" library="Bauelemente" deviceset="CON_PCB_7.5MM_3-POLE" device=""/>
 <part name="CON1" library="Bauelemente" deviceset="CON_PCB_7.5MM_3-POLE" device=""/>
 <part name="R4" library="Bauelemente" deviceset="R" device="" value="1k"/>
+<part name="Q1" library="Bauelemente" deviceset="QUARTZ_HC49S" device="" value="16MHz"/>
 </parts>
 <sheets>
 <sheet>
@@ -884,8 +872,7 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <instance part="K2" gate="G$2" x="187.96" y="76.2"/>
 <instance part="IC1" gate="A" x="170.18" y="58.42"/>
 <instance part="R1" gate="G$1" x="170.18" y="27.94"/>
-<instance part="C1" gate="G$1" x="17.78" y="63.5" rot="R180"/>
-<instance part="Q1" gate="G$1" x="45.72" y="40.64" rot="R270"/>
+<instance part="C1" gate="G$1" x="30.48" y="71.12"/>
 <instance part="C2" gate="G$1" x="43.18" y="43.18" rot="R270"/>
 <instance part="C3" gate="G$1" x="43.18" y="38.1" rot="R270"/>
 <instance part="C4" gate="G$1" x="40.64" y="71.12"/>
@@ -901,7 +888,6 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <instance part="P+2" gate="1" x="50.8" y="78.74"/>
 <instance part="GND3" gate="1" x="38.1" y="35.56"/>
 <instance part="GND4" gate="1" x="43.18" y="58.42"/>
-<instance part="GND5" gate="1" x="22.86" y="66.04"/>
 <instance part="GND6" gate="1" x="106.68" y="7.62"/>
 <instance part="U$1" gate="1" x="132.08" y="71.12" rot="MR0"/>
 <instance part="P+3" gate="1" x="121.92" y="78.74"/>
@@ -919,27 +905,30 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <instance part="CON2" gate="A" x="187.96" y="101.6" rot="MR270"/>
 <instance part="CON1" gate="A" x="231.14" y="101.6" rot="MR270"/>
 <instance part="R4" gate="G$1" x="106.68" y="15.24" rot="R90"/>
+<instance part="Q1" gate="A" x="48.26" y="40.64" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="U1" gate="A" pin="XTAL1"/>
-<wire x1="45.72" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<junction x="45.72" y="43.18"/>
+<wire x1="45.72" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="A" pin="2"/>
+<wire x1="48.26" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+<junction x="48.26" y="43.18"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="U1" gate="A" pin="XTAL2_(PC0)"/>
 <wire x1="50.8" y1="40.64" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-<junction x="45.72" y="38.1"/>
+<wire x1="50.8" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="A" pin="1"/>
+<wire x1="48.26" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
+<junction x="48.26" y="38.1"/>
 </segment>
 </net>
 <net name="USBCON_N" class="0">
@@ -981,13 +970,9 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="43.18" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <junction x="38.1" y="38.1"/>
-<pinref part="Q1" gate="G$1" pin="GND"/>
-<wire x1="38.1" y1="40.64" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
-<junction x="38.1" y="40.64"/>
+<wire x1="38.1" y1="43.18" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -999,11 +984,9 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <junction x="43.18" y="60.96"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <junction x="40.64" y="66.04"/>
-</segment>
-<segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="17.78" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<junction x="35.56" y="66.04"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="1" pin="GND"/>
@@ -1039,16 +1022,10 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<wire x1="17.78" y1="58.42" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="0" y1="60.96" x2="0" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="USB1" gate="A" pin="VCC"/>
 <wire x1="0" y1="48.26" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="A" pin="VBUS"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<junction x="0" y="60.96"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<junction x="17.78" y="60.96"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="AVCC"/>
@@ -1065,6 +1042,13 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <junction x="40.64" y="73.66"/>
 <wire x1="40.64" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
+<junction x="35.56" y="73.66"/>
+<pinref part="IC2" gate="A" pin="VBUS"/>
+<wire x1="30.48" y1="73.66" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="73.66" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
+<junction x="30.48" y="73.66"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="1" pin="VCC"/>
