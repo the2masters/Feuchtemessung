@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -370,6 +370,44 @@ chip</description>
 <rectangle x1="-5.75" y1="-1.5" x2="-4.5" y2="1.5" layer="39"/>
 <rectangle x1="4.5" y1="-1.5" x2="5.75" y2="1.5" layer="39"/>
 </package>
+<package name="SENS_SHS-A5">
+<pad name="1" x="-2.54" y="0" drill="1.1" shape="square"/>
+<pad name="2" x="0" y="0" drill="1.1" shape="square"/>
+<pad name="3" x="2.54" y="0" drill="1.1" shape="square"/>
+<wire x1="5" y1="1" x2="5" y2="21" width="0.2" layer="21"/>
+<wire x1="5" y1="21" x2="-5" y2="21" width="0.2" layer="21"/>
+<wire x1="-5" y1="21" x2="-5" y2="1" width="0.2" layer="21"/>
+<wire x1="-5" y1="1" x2="-4.5" y2="1" width="0.2" layer="21"/>
+<wire x1="5" y1="1" x2="4.5" y2="1" width="0.2" layer="21"/>
+<wire x1="4.5" y1="1" x2="-4.5" y2="1" width="0.2" layer="51"/>
+<text x="-3.96" y="11" size="1.5" layer="21" font="vector" rot="R90" align="center">SHS-A5</text>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="10.16" width="0.8" layer="21"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="11.43" width="0.8" layer="21"/>
+<wire x1="-2.54" y1="11.43" x2="-2.54" y2="12.7" width="0.8" layer="21"/>
+<wire x1="-2.54" y1="12.7" x2="-2.54" y2="16.51" width="0.8" layer="21"/>
+<wire x1="-2.54" y1="16.51" x2="-2.54" y2="17.78" width="0.8" layer="21"/>
+<wire x1="-2.54" y1="17.78" x2="-2.54" y2="19.05" width="0.8" layer="21"/>
+<wire x1="-2.54" y1="19.05" x2="1.905" y2="19.05" width="0.2" layer="21"/>
+<wire x1="-2.54" y1="17.78" x2="1.905" y2="17.78" width="0.2" layer="21"/>
+<wire x1="-2.54" y1="16.51" x2="1.905" y2="16.51" width="0.2" layer="21"/>
+<wire x1="-1.905" y1="18.415" x2="2.54" y2="18.415" width="0.2" layer="21"/>
+<wire x1="-1.905" y1="17.145" x2="2.54" y2="17.145" width="0.2" layer="21"/>
+<wire x1="-1.905" y1="15.875" x2="2.54" y2="15.875" width="0.2" layer="21"/>
+<wire x1="-2.54" y1="12.7" x2="1.905" y2="12.7" width="0.35" layer="21"/>
+<wire x1="-2.54" y1="11.43" x2="1.905" y2="11.43" width="0.35" layer="21"/>
+<wire x1="-2.54" y1="10.16" x2="1.905" y2="10.16" width="0.35" layer="21"/>
+<wire x1="-1.905" y1="12.065" x2="2.54" y2="12.065" width="0.35" layer="21"/>
+<wire x1="-1.905" y1="10.795" x2="2.54" y2="10.795" width="0.35" layer="21"/>
+<wire x1="-1.905" y1="9.525" x2="2.54" y2="9.525" width="0.35" layer="21"/>
+<wire x1="2.54" y1="12.7" x2="2.54" y2="8.89" width="0.35" layer="21"/>
+<wire x1="2.54" y1="8.89" x2="0" y2="6.35" width="0.2" layer="21"/>
+<wire x1="0" y1="6.35" x2="0" y2="1.905" width="0.8" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="5.08" width="0.8" layer="21"/>
+<wire x1="2.54" y1="19.05" x2="2.54" y2="15.24" width="0.8" layer="21"/>
+<wire x1="2.54" y1="15.24" x2="3.81" y2="13.97" width="0.2" layer="21"/>
+<wire x1="3.81" y1="13.97" x2="3.81" y2="6.35" width="0.2" layer="21"/>
+<wire x1="3.81" y1="6.35" x2="2.54" y2="5.08" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RELAY">
@@ -570,6 +608,44 @@ chip</description>
 <text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="SENS_SHS-A5">
+<wire x1="-2.54" y1="1.651" x2="2.54" y2="1.651" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.429" x2="-2.54" y2="3.429" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.651" x2="2.54" y2="3.429" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.651" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="0" y="6.604" size="2.032" layer="95" align="bottom-center">&gt;NAME</text>
+<pin name="2" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.429" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-3.429" x2="2.54" y2="-3.429" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.651" x2="-2.54" y2="-1.651" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.429" x2="2.54" y2="-1.651" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-3.429" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="0" y="-6.096" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+<pin name="3" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.651" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-4.318" x2="2.54" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-4.318" x2="-1.778" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.762" x2="2.54" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.762" x2="-1.778" y2="4.318" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="-1.524" x2="-4.318" y2="0" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="0" x2="-4.572" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="0" x2="-4.064" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="0" x2="-3.302" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="-1.524" x2="-3.556" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="-1.524" x2="-3.048" y2="-1.016" width="0.1524" layer="94"/>
+<text x="0" y="0" size="1.27" layer="94" font="vector" align="center">RH</text>
+<text x="0" y="5.08" size="1.27" layer="94" font="vector" align="center">RH</text>
+<wire x1="-4.318" y1="3.556" x2="-4.318" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="5.08" x2="-4.572" y2="4.572" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="5.08" x2="-4.064" y2="4.572" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="5.08" x2="-3.302" y2="3.556" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="3.556" x2="-3.556" y2="4.064" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="3.556" x2="-3.048" y2="4.064" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -817,6 +893,23 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SENS_SHS-A5">
+<gates>
+<gate name="A" symbol="SENS_SHS-A5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SENS_SHS-A5">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
