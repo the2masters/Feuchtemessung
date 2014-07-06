@@ -126,7 +126,7 @@
 <wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.2" layer="51"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.2" layer="51"/>
 <text x="0" y="0" size="2" layer="25" font="vector" rot="R45" align="center">&gt;NAME</text>
-<circle x="-4.5" y="4.5" radius="1" width="0.2" layer="21"/>
+<circle x="-4.4" y="4.4" radius="0.9" width="0.2" layer="21"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="4.5" width="0.2" layer="21"/>
 <wire x1="-3.5" y1="3.5" x2="-4.5" y2="3.5" width="0.2" layer="21"/>
 <wire x1="3.5" y1="3.5" x2="3.5" y2="4.5" width="0.2" layer="21"/>
@@ -217,7 +217,7 @@
 <rectangle x1="0.75" y1="0.9" x2="1.15" y2="1.5" layer="51"/>
 <rectangle x1="-0.2" y1="0.9" x2="0.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.15" y1="0.9" x2="-0.75" y2="1.5" layer="51"/>
-<circle x="-2.45" y="-1.75" radius="1" width="0.2" layer="21"/>
+<circle x="-2.35" y="-1.65" radius="0.9" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="1.75" x2="-1.45" y2="-0.75" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="-0.75" x2="-1.45" y2="-1.75" width="0.2" layer="21"/>
 <wire x1="1.45" y1="1.75" x2="1.45" y2="0.75" width="0.2" layer="21"/>
@@ -300,7 +300,9 @@ chip</description>
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;&lt;p&gt; AVR ISP 10 Pin, 0.1" Straight</description>
 <wire x1="-6.35" y1="2.54" x2="6.35" y2="2.54" width="0.254" layer="21"/>
 <wire x1="6.35" y1="2.54" x2="6.35" y2="-2.54" width="0.254" layer="21"/>
-<wire x1="6.35" y1="-2.54" x2="-6.35" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="6.35" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="-1.905" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-6.35" y2="-2.54" width="0.254" layer="21"/>
 <wire x1="-6.35" y1="-2.54" x2="-6.35" y2="2.54" width="0.254" layer="21"/>
 <pad name="1" x="-5.08" y="-1.27" drill="1" shape="square" first="yes"/>
 <pad name="2" x="-5.08" y="1.27" drill="1" shape="square"/>
@@ -312,7 +314,7 @@ chip</description>
 <pad name="8" x="2.54" y="1.27" drill="1" shape="square"/>
 <pad name="9" x="5.08" y="-1.27" drill="1" shape="square"/>
 <pad name="10" x="5.08" y="1.27" drill="1" shape="square"/>
-<text x="0" y="-3.048" size="2" layer="25" font="vector" align="top-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="2" layer="25" font="vector" align="top-center">&gt;NAME</text>
 <rectangle x1="-5.334" y1="-1.524" x2="-4.826" y2="-1.016" layer="51"/>
 <rectangle x1="-5.334" y1="1.016" x2="-4.826" y2="1.524" layer="51"/>
 <rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
@@ -325,6 +327,9 @@ chip</description>
 <rectangle x1="4.826" y1="-1.524" x2="5.334" y2="-1.016" layer="51"/>
 <rectangle x1="-6.35" y1="-2.54" x2="6.35" y2="2.54" layer="39"/>
 <circle x="-7.62" y="-3.81" radius="1.016" width="0.508" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="-3.175" width="0.2" layer="21"/>
+<wire x1="-1.905" y1="-3.175" x2="1.905" y2="-3.175" width="0.2" layer="21"/>
+<wire x1="1.905" y1="-3.175" x2="1.905" y2="-2.54" width="0.2" layer="21"/>
 </package>
 <package name="SOIC16">
 <description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
@@ -441,8 +446,8 @@ chip</description>
 <wire x1="3.81" y1="6.35" x2="2.54" y2="5.08" width="0.2" layer="21"/>
 </package>
 <package name="R_THT_7.5MM">
-<pad name="1" x="-3.8" y="0" drill="0.8" shape="square"/>
-<pad name="2" x="3.8" y="0" drill="0.8" shape="square"/>
+<pad name="1" x="-3.75" y="0" drill="0.8" shape="square"/>
+<pad name="2" x="3.75" y="0" drill="0.8" shape="square"/>
 <wire x1="-2.7" y1="1.1" x2="2.7" y2="1.1" width="0.2" layer="21"/>
 <wire x1="2.7" y1="1.1" x2="2.7" y2="-1.1" width="0.2" layer="21"/>
 <wire x1="2.7" y1="-1.1" x2="-2.7" y2="-1.1" width="0.2" layer="21"/>
@@ -450,6 +455,35 @@ chip</description>
 <text x="0" y="0" size="1.5" layer="27" font="vector" align="center">&gt;VALUE</text>
 <text x="0" y="-1.5" size="1.5" layer="25" font="vector" align="top-center">&gt;NAME</text>
 <rectangle x1="-2.8" y1="-1.2" x2="2.8" y2="1.2" layer="39"/>
+</package>
+<package name="CON_2.54MM_3-POLE">
+<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="-3.81" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1" shape="square"/>
+<pad name="2" x="0" y="0" drill="1" shape="square"/>
+<pad name="3" x="2.54" y="0" drill="1" shape="square"/>
+<text x="0" y="-1.905" size="2" layer="25" font="vector" align="top-center">&gt;NAME</text>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="39"/>
+</package>
+<package name="R_THT_10MM">
+<pad name="1" x="-5" y="0" drill="0.8" shape="square"/>
+<pad name="2" x="5" y="0" drill="0.8" shape="square"/>
+<wire x1="-2.7" y1="1.1" x2="2.7" y2="1.1" width="0.2" layer="21"/>
+<wire x1="2.7" y1="1.1" x2="2.7" y2="0" width="0.2" layer="21"/>
+<wire x1="2.7" y1="0" x2="2.7" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="2.7" y1="-1.1" x2="-2.7" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-2.7" y1="-1.1" x2="-2.7" y2="0" width="0.2" layer="21"/>
+<text x="0" y="0" size="1.5" layer="27" font="vector" align="center">&gt;VALUE</text>
+<text x="0" y="-1.5" size="1.5" layer="25" font="vector" align="top-center">&gt;NAME</text>
+<rectangle x1="-2.8" y1="-1.2" x2="2.8" y2="1.2" layer="39"/>
+<wire x1="-2.7" y1="0" x2="-2.7" y2="1.1" width="0.2" layer="21"/>
+<wire x1="-2.7" y1="0" x2="-3.9" y2="0" width="0.2" layer="21"/>
+<wire x1="2.7" y1="0" x2="3.9" y2="0" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -823,7 +857,16 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="THT" package="R_THT_7.5MM">
+<device name="THT_7.5MM" package="R_THT_7.5MM">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="THT_10MM" package="R_THT_10MM">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
@@ -958,6 +1001,23 @@ Single USB 2.0 ESD protection to IEC 61000-4-2 level 4</description>
 </gates>
 <devices>
 <device name="" package="SENS_SHS-A5">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON_2.54MM_3-POLE" prefix="CON">
+<gates>
+<gate name="A" symbol="CON_3-POLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_2.54MM_3-POLE">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
